@@ -1,86 +1,39 @@
-# 🖼️ Multimedia Processing
+# Multimedia Processing
 
-A collection of Multimedia Processing laboratory experiments implemented in **Python**. This project demonstrates fundamental image processing techniques such as quantization, sampling, HDR imaging, spatial filtering, and bit-plane slicing.
+A collection of laboratory experiments in digital image processing, implemented in Python. The project covers core techniques including color quantization, spatial and frequency-domain sampling, high dynamic range (HDR) imaging, spatial filtering, and bit-plane slicing.
 
----
+## Overview
 
-## 📚 Project Overview
+This repository contains six independent experiments developed for a Multimedia Processing course. Each experiment is implemented from first principles to demonstrate the underlying algorithm, rather than relying solely on high-level library functions. Together, they explore how different processing techniques affect image quality, compression, and visual representation.
 
-This repository contains six multimedia processing experiments developed as part of the Multimedia Processing course.
+## Contents
 
-The implementation focuses on understanding how different image processing algorithms affect image quality, compression, and visual representation.
+| Experiment | Topic | Techniques |
+|---|---|---|
+| [Q1](./Q1) | Image Quantization | Greyscale via desaturation, median cut quantization, octree quantization |
+| [Q2](./Q2) | K-Means Rate-Distortion Quantization | K-Means clustering, codebook generation, rate-distortion optimization |
+| [Q3](./Q3) | Frequency & Spatial Sampling | FFT-based sampling, spatial subsampling, comparison across sampling factors |
+| [Q4](./Q4) | High Dynamic Range (HDR) Imaging | Camera response function recovery, irradiance map reconstruction, tone mapping |
+| [Q5](./Q5) | Spatial Filtering | Box filters (5×5, 20×20), Gaussian and normalized Gaussian filters |
+| [Q6](./Q6) | Bit-Plane Slicing | Bit-plane extraction, image reconstruction, difference imaging |
 
----
-
-## 🚀 Experiments
-
-### 📌 Q1 - Image Quantization
-- Greyscale via Desaturation
-- Median Cut Quantization
-- Octree Quantization
-
----
-
-### 📌 Q2 - K-Means Rate Distortion Quantization
-
-- K-Means clustering
-- Codebook generation
-- Rate-Distortion optimization
-
----
-
-### 📌 Q3 - Frequency & Spatial Sampling
-
-- FFT based sampling
-- Spatial subsampling
-- Comparison at different sampling factors
-
----
-
-### 📌 Q4 - High Dynamic Range (HDR)
-
-- Camera Response Function (CRF)
-- Irradiance Map Recovery
-- Tone Mapping
-
----
-
-### 📌 Q5 - Spatial Filtering
-
-- 5×5 Box Filter
-- 20×20 Box Filter
-- Gaussian Filter
-- Normalized Gaussian Filter
-
----
-
-### 📌 Q6 - Bit Plane Slicing
-
-- Extract 8 bit planes
-- Reconstruct image from lower bit planes
-- Difference image generation
-
----
-
-# 📂 Repository Structure
+## Repository Structure
 
 ```
-Multimedia-Processing
-│
+Multimedia-Processing/
 ├── Presentation/
 │   └── Multimedia Processing.pptx
-│
 ├── Q1/
 ├── Q2/
 ├── Q3/
 ├── Q4/
 ├── Q5/
-└── Q6/
+├── Q6/
+├── requirements.txt
+└── README.md
 ```
 
----
-
-# 🛠️ Technologies Used
+## Technologies
 
 - Python 3
 - NumPy
@@ -88,52 +41,36 @@ Multimedia-Processing
 - OpenCV
 - Matplotlib
 
----
+## Setup
 
-# ⚙️ Installation
-
-Clone the repository
+Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/k-tejzz/Multimedia-Processing.git
-```
-
-Install the required packages
-
-```bash
+cd Multimedia-Processing
 pip install -r requirements.txt
 ```
 
----
+## Usage
 
-# ▶️ Running the Programs
-
-Navigate to the required experiment folder.
-
-Example:
+Each experiment is self-contained within its respective directory. To run one, navigate to the folder and execute its script:
 
 ```bash
 cd Q1
 python code.py
 ```
 
----
+Repeat for `Q2` through `Q6` as needed.
 
-# 📖 Course
+## Course
 
 Multimedia Processing Laboratory
 
----
-
-# 👨‍💻 Author
+## Author
 
 **K. Sathya Teja**
+GitHub: [@k-tejzz](https://github.com/k-tejzz)
 
-GitHub:
-https://github.com/k-tejzz
+## Acknowledgements
 
----
-
-# ⭐ Acknowledgements
-
-This project was developed for academic learning purposes. References used for each experiment are included in the presentation.
+Developed for academic and educational purposes. References used in each experiment are documented in the accompanying presentation.
